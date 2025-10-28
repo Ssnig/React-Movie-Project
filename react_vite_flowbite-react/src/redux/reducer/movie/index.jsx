@@ -1,7 +1,11 @@
 import { ActionType } from "../../action/actions-types"
 
 const initialState ={
-    movies : [],
+    movies : [
+        {name:'code lab',
+            description : 'lorem oohfiahdifhiearh8hihasahdihuahfoghaeyfihiahdifhaihds8fhiahifhsaodhfah8sdhfiahsdihfihadsifhf9guodfkfhsdhgkskfhj99uoeuojojaosdjfjsj9fggjflsjlfoje9ufjljsjfkf9ruiujflksjdljsldjlfjlgghhhnkndkfor9eujsldjfljfdj'
+        }
+    ],
     movie : {}
 }
 export const movieReducer = (state = initialState , {type, payload}) =>{

@@ -1,6 +1,10 @@
 import {Alert} from 'flowbite-react';
 
 import './App.css'
+import Header from './components/Header';
+import Home from './components/Home';
+import React from 'react';
+import { Route, Routes } from 'react-router';
 
 function App() {
 
@@ -9,6 +13,8 @@ function App() {
       <div>
         <h1>Hello</h1>
         <hr />
+        <Header/>
+        <Home/>
       </div>
     </>
   )
