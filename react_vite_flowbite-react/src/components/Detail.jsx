@@ -1,14 +1,16 @@
 import React from 'react'
 import benImage from './Img/ben.png'
 import { Card } from 'flowbite-react'
-import { Navigate } from 'react-router'
+import { Navigate,  } from 'react-router'
+import { useNavigate } from 'react-router-dom'
 
 const Detail = () => {
+  const navigate = useNavigate();
   return (
     <div className='container mx-auto'>
       <div>
         <div>
-          <span  style={{'fontSize' : '20px'}} onClick={()=>Navigate('/')} >Back</span>
+          <button  style={{'fontSize' : '20px'}} onClick={()=>navigate('/')} >Back</button>
         </div>
         <Card
           className="max-w-sm"
